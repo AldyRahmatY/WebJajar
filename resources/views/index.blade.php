@@ -36,7 +36,7 @@
         <nav class="navbar navbar-expand-lg  navbar-light">
           <div class="container">
               <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="">
+                <img src="{{ url('assets/user/img/logo.png') }}" alt="">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="text-white lnr lnr-menu"></span>
@@ -69,7 +69,7 @@
     </section>
 
     <section class="default-banner active-blog-slider">
-        <div class="item-slider relative" style="background: url(img/jajar1.jpg);background-size: cover;">
+        <div class="item-slider relative" style="background: url(assets/user/img/jajar1.jpg);background-size: cover;">
           <div class="overlay" style="background: rgba(0,0,0,.3)"></div>
           <div class="container">
             <div class="row fullscreen justify-content-center align-items-center">
@@ -86,7 +86,7 @@
             </div>
           </div>
         </div>
-        <div class="item-slider relative" style="background: url(img/jajar2.jpg);background-size: cover;">
+        <div class="item-slider relative" style="background: url(assets/user/img/jajar2.jpg);background-size: cover;">
           <div class="overlay" style="background: rgba(0,0,0,.3)"></div>
           <div class="container">
             <div class="row fullscreen justify-content-center align-items-center">
@@ -102,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class="item-slider relative" style="background: url(img/slider3.jpg);background-size: cover;">
+        <div class="item-slider relative" style="background: url(assets/user/img/slider3.jpg);background-size: cover;">
           <div class="overlay" style="background: rgba(0,0,0,.3)"></div>
           <div class="container">
             <div class="row fullscreen justify-content-center align-items-center">
@@ -134,7 +134,7 @@
         <div class="single-info row mt-40">
           <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
             <div class="info-thumb">
-              <img src="img/umbulan1.jpg" class="img-fluid" alt="">
+              <img src="{{ url('assets/user/img/umbulan1.jpg') }}" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-6 col-md-12 no-padding info-rigth">
@@ -306,25 +306,25 @@
         <div class="row no-padding">
           <div class="active-gallery">
             <div class="item single-gallery">
-              <img src="img/g1.jpg" alt="">
+              <img src="{{ url('assets/user/img/g1.jpg') }}" alt="">
             </div>	
             <div class="item single-gallery">
-              <img src="img/g2.jpg" alt="">
+              <img src="{{ url('assets/user/img/g2.jpg') }}" alt="">
             </div>	
             <div class="item single-gallery">
-              <img src="img/g3.jpg" alt="">
+              <img src="{{ url('assets/user/img/g3.jpg') }}" alt="">
             </div>	
             <div class="item single-gallery">
-              <img src="img/g4.jpg" alt="">
+              <img src="{{ url('assets/user/img/g4.jpg') }}" alt="">
             </div>	
             <div class="item single-gallery">
-              <img src="img/jajar1.jpg" alt="">
+              <img src="{{ url('assets/user/img/jajar1.jpg') }}" alt="">
             </div>	
             <div class="item single-gallery">
-              <img src="img/jajar2.jpg" alt="">
+              <img src="{{ url('assets/user/img/jajar2.jpg') }}" alt="">
             </div>
             <div class="item single-gallery">
-              <img src="img/umbulan1.jpg" alt="">
+              <img src="{{ url('assets/user/img/umbulan1.jpg') }}" alt="">
             </div>																	
           </div>
         </div>
@@ -352,7 +352,7 @@
 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <div class="portfolio-img"><img src="img/jajar1.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar1.jpg') }}" class="img-fluid" alt=""></div>
     <div class="portfolio-info">
       <h4>App 1</h4>
       <p>App</p>
@@ -362,7 +362,7 @@
   </div>
 
   <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <div class="portfolio-img"><img src="img/jajar2.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar2.jpg') }}" class="img-fluid" alt=""></div>
     <div class="portfolio-info">
       <h4>Web 3</h4>
       <p>Web</p>
@@ -372,7 +372,7 @@
   </div>
 
   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <div class="portfolio-img"><img src="img/jajar1.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar1.jpg') }}" class="img-fluid" alt=""></div>
     <div class="portfolio-info">
       <h4>App 2</h4>
       <p>App</p>
@@ -382,7 +382,7 @@
   </div>
 
   <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <div class="portfolio-img"><img src="img/g1.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-img"><img src="{{ url('assets/user/img/g1.jpg') }}" class="img-fluid" alt=""></div>
     <div class="portfolio-info">
       <h4>Card 2</h4>
       <p>Card</p>
@@ -392,7 +392,7 @@
   </div>
 
   <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <div class="portfolio-img"><img src="img/jajar2.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar2.jpg') }}" class="img-fluid" alt=""></div>
     <div class="portfolio-info">
       <h4>Web 2</h4>
       <p>Web</p>
@@ -402,7 +402,7 @@
   </div>
 
   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <div class="portfolio-img"><img src="img/jajar1.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar1.jpg') }}" class="img-fluid" alt=""></div>
     <div class="portfolio-info">
       <h4>App 3</h4>
       <p>App</p>
@@ -412,7 +412,7 @@
   </div>
 
   <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <div class="portfolio-img"><img src="img/g1.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-img"><img src="{{ url('assets/user/img/g1.jpg') }}" class="img-fluid" alt=""></div>
     <div class="portfolio-info">
       <h4>Card 1</h4>
       <p>Card</p>
@@ -422,7 +422,7 @@
   </div>
 
   <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <div class="portfolio-img"><img src="img/g1.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-img"><img src="{{ url('assets/user/img/g1.jpg') }}" class="img-fluid" alt=""></div>
     <div class="portfolio-info">
       <h4>Card 3</h4>
       <p>Card</p>
@@ -432,7 +432,7 @@
   </div>
 
   <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <div class="portfolio-img"><img src="img/jajar2.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar2.jpg') }}" class="img-fluid" alt=""></div>
     <div class="portfolio-info">
       <h4>Web 3</h4>
       <p>Web</p>
@@ -515,7 +515,7 @@
       <div class="overlay overlay-bg"></div>
       <div class="container">
         <div class="video-content">
-          <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn"><img src="img/play-btn.png" alt=""></a>
+          <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn"><img src="{{ url('assets/user/img/play-btn.png') }}" alt=""></a>
           <div class="video-desc">
             <h3 class="h2 text-white text-uppercase">Being unique is the preference</h3>
             <h4 class="text-white">Youtube video will appear in popover</h4>
@@ -547,7 +547,10 @@
               <p>Who are in extremely love with eco friendly system.</p>
             </div>
           </div>
-        </div>										
+        </div>
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="{{ url('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5312.225169705565!2d112.59256140786691!3d-7.983607827952619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788373072ef9d3%3A0xe5c3d15f669a32ea!2sISNA%20COLLECTION!5e0!3m2!1sid!2sid!4v1708495710176!5m2!1sid!2sid') }}" frameborder="0" allowfullscreen></iframe>
+      </div>										
         <form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
           <div class="row">	
           <div class="col-lg-6 form-group">
