@@ -16,7 +16,7 @@
   <!-- Site Title -->
   <title>Jajar Gumregah</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <!--
     CSS
     ============================================= -->
@@ -45,7 +45,7 @@
               <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>									
+                <li><a href="#about">About</a></li>
                 <li><a href="#secvice">Service</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#faq">Faq</a></li>
@@ -61,11 +61,11 @@
                     </div>
                   </li>
                 </ul>
-              </div>						
+              </div>
           </div>
         </nav>
       </header>
-      <!-- End Header Area -->				
+      <!-- End Header Area -->
     </section>
 
     <section class="default-banner active-blog-slider">
@@ -128,38 +128,37 @@
               <p>Jajar, Kec. Gandusari, Kabupaten Trenggalek, Jawa Timur 66372</p>
             </div>
           </div>
-        </div>					
+        </div>
         <div class="single-info row mt-40">
           <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
             <div class="info-thumb">
-              <img src="{{ url('assets/user/img/umbulan1.jpg') }}" class="img-fluid" alt="">
-            </div>
-            
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qREgRNzEGeE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
           </div>
           <div class="col-lg-6 col-md-12 no-padding info-right">
             <div class="info-content">
               <h2 class="pb-30">Desa Wisata <br>
               Jajar Gumregah</h2>
               <p>
-                Desa Wisata Jajar, yang terletak di Kecamatan Gandusari, Kabupaten Trenggalek, merupakan destinasi wisata yang menawarkan keindahan alam dan budaya lokal yang khas. Dikelilingi oleh hamparan perbukitan hijau dan persawahan yang asri, desa ini menjadi tempat yang ideal untuk wisatawan yang ingin merasakan suasana pedesaan yang tenang dan alami. 									
+                Desa Wisata Jajar, yang terletak di Kecamatan Gandusari, Kabupaten Trenggalek, merupakan destinasi wisata yang menawarkan keindahan alam dan budaya lokal yang khas. Dikelilingi oleh hamparan perbukitan hijau dan persawahan yang asri, desa ini menjadi tempat yang ideal untuk wisatawan yang ingin merasakan suasana pedesaan yang tenang dan alami.
               </p>
-              <br>
               <p>
-                Desa ini memiliki luas sekitar 531.137 Ha, dengan jumlah penduduk sekitar 2971 jiwa serta jumlah KK sebanyak 1148. Secara administratif, desa ini memiliki 3 dusun, yaitu: Krajan, Kebon dan Belik. Desa Jajar juga masih erat dalam memegang teguh kebudayaannya yang merupakan wujud nguri-nguri warisan adiluhung dari para leluhur mereka. Salah satu budaya yang masih lestari di Desa Jajar adalah Tiban, tradisi memanggil hujan dengan cara menggelar pertandingan cambuk.								
+                Desa ini memiliki luas sekitar 531.137 Ha, dengan jumlah penduduk sekitar 2971 jiwa serta jumlah KK sebanyak 1148. Secara administratif, desa ini memiliki 3 dusun, yaitu: Krajan, Kebon dan Belik. Desa Jajar juga masih erat dalam memegang teguh kebudayaannya yang merupakan wujud nguri-nguri warisan adiluhung dari para leluhur mereka. Salah satu budaya yang masih lestari di Desa Jajar adalah Tiban, tradisi memanggil hujan dengan cara menggelar pertandingan cambuk.
               </p>
-              <br>
               <p>
                 Desa Wisata Jajar menjadi tujuan wisata yang menawarkan pengalaman otentik bagi pengunjung yang ingin menjelajahi pesona alam dan budaya Trenggalek.
               </p>
               </div>
+            <br>
           </div>
           <br><iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14604.701808554011!2d111.706156!3d-8.158296949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7919a240317a55%3A0xa4eacd07eb2cacd1!2sJajar%2C%20Kec.%20Gandusari%2C%20Kabupaten%20Trenggalek%2C%20Jawa%20Timur!5e1!3m2!1sid!2sid!4v1727802240783!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
     <!-- End about Area -->
-    
-    
+
+
     <!-- Start project Area -->
 
     <section id="portfolio" class="portfolio section-gap project-area">
@@ -168,16 +167,16 @@
           <h1 class="mb-10">Destinasi Wisata Desa Jajar</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore  et dolore magna aliqua.</p>
         </div>
-      
+
       <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
         <li data-filter="*" class="filter-active">Semua</li>
         <li data-filter=".filter-app">Wisata Edukasi</li>
         <li data-filter=".filter-card">Wisata Alam</li>
         <li data-filter=".filter-web">Web</li>
       </ul>
-      
+
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-      
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar1.jpg') }}" class="img-fluid" alt=""></div>
           <div class="portfolio-info">
@@ -187,7 +186,7 @@
             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar2.jpg') }}" class="img-fluid" alt=""></div>
           <div class="portfolio-info">
@@ -197,7 +196,7 @@
             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar1.jpg') }}" class="img-fluid" alt=""></div>
           <div class="portfolio-info">
@@ -207,7 +206,7 @@
             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-img"><img src="{{ url('assets/user/img/g1.jpg') }}" class="img-fluid" alt=""></div>
           <div class="portfolio-info">
@@ -217,7 +216,7 @@
             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar2.jpg') }}" class="img-fluid" alt=""></div>
           <div class="portfolio-info">
@@ -227,7 +226,7 @@
             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar1.jpg') }}" class="img-fluid" alt=""></div>
           <div class="portfolio-info">
@@ -237,7 +236,7 @@
             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-img"><img src="{{ url('assets/user/img/g1.jpg') }}" class="img-fluid" alt=""></div>
           <div class="portfolio-info">
@@ -247,7 +246,7 @@
             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-img"><img src="{{ url('assets/user/img/g1.jpg') }}" class="img-fluid" alt=""></div>
           <div class="portfolio-info">
@@ -257,7 +256,7 @@
             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar2.jpg') }}" class="img-fluid" alt=""></div>
           <div class="portfolio-info">
@@ -267,9 +266,9 @@
             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
-      
+
       </div>
-      
+
       </div>
       </section>
     <!-- End project Area -->
@@ -285,7 +284,7 @@
               <p>Who are in extremely love with eco friendly system.</p>
             </div>
           </div>
-        </div>						
+        </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature mb-30">
@@ -295,8 +294,8 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature mb-30">
@@ -306,8 +305,8 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature mb-30">
@@ -317,8 +316,8 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature">
@@ -328,8 +327,8 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature">
@@ -339,8 +338,8 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature">
@@ -350,11 +349,11 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
-          </div>																					
+              </p>
+            </div>
+          </div>
         </div>
-      </div>	
+      </div>
     </section>
     <!-- End feature Area -->
 
@@ -368,7 +367,7 @@
               <p>Who are in extremely love with eco friendly system.</p>
             </div>
           </div>
-        </div>						
+        </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature mb-30">
@@ -378,8 +377,8 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature mb-30">
@@ -389,8 +388,8 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature mb-30">
@@ -400,8 +399,8 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature">
@@ -411,8 +410,8 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature">
@@ -422,8 +421,8 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
+              </p>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 ">
             <div class="single-feature">
@@ -433,11 +432,11 @@
               </div>
               <p>
                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>							
-            </div>							
-          </div>																					
+              </p>
+            </div>
+          </div>
         </div>
-      </div>	
+      </div>
     </section>
 
 
@@ -448,33 +447,33 @@
           <div class="active-gallery">
             <div class="item single-gallery">
               <img src="{{ url('assets/user/img/g1.jpg') }}" alt="">
-            </div>	
+            </div>
             <div class="item single-gallery">
               <img src="{{ url('assets/user/img/g2.jpg') }}" alt="">
-            </div>	
+            </div>
             <div class="item single-gallery">
               <img src="{{ url('assets/user/img/g3.jpg') }}" alt="">
-            </div>	
+            </div>
             <div class="item single-gallery">
               <img src="{{ url('assets/user/img/g4.jpg') }}" alt="">
-            </div>	
+            </div>
             <div class="item single-gallery">
               <img src="{{ url('assets/user/img/jajar1.jpg') }}" alt="">
-            </div>	
+            </div>
             <div class="item single-gallery">
               <img src="{{ url('assets/user/img/jajar2.jpg') }}" alt="">
             </div>
             <div class="item single-gallery">
               <img src="{{ url('assets/user/img/umbulan1.jpg') }}" alt="">
-            </div>																	
+            </div>
           </div>
         </div>
-      </div>	
+      </div>
     </section>
     <!-- End gallery Area -->
-    
-    
-    
+
+
+
     <!-- Start faq Area -->
     <section class="faq-area section-gap" id="faq">
       <div class="container">
@@ -485,26 +484,26 @@
               <p>Who are in extremely love with eco friendly system.</p>
             </div>
           </div>
-        </div>							
+        </div>
         <div class="row d-flex align-items-center">
           <div class="counter-left col-lg-3 col-md-3">
             <div class="single-facts">
               <h2 class="counter">531.137</h2>
-              <p>Wilayah Desa Jajar</p>							
+              <p>Wilayah Desa Jajar</p>
             </div>
             <div class="single-facts">
               <h2 class="counter">3</h2>
-              <p>Total Dusun</p>							
+              <p>Total Dusun</p>
             </div>
             <div class="single-facts">
               <h2 class="counter">21</h2>
-              <p>Total RT</p>							
-            </div>												
+              <p>Total RT</p>
+            </div>
             <div class="single-facts">
               <h2 class="counter">933</h2>
-              <p>Cup of Coffee</p>							
+              <p>Cup of Coffee</p>
             </div>
-          </div>	
+          </div>
           <div class="faq-content col-lg-9 col-md-9">
             <div class="single-faq">
               <h2 class="text-uppercase">
@@ -529,14 +528,14 @@
               <p>
                 “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
               </p>
-            </div>												
-          </div>									
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- End faq Area -->
-    
-    
+
+
     <!-- Start Video Area -->
     <section class="video-area pt-40 pb-40">
       <div class="overlay overlay-bg"></div>
@@ -551,20 +550,20 @@
       </div>
     </section>
     <!-- Start Video Area -->
-    
-    
+
+
     <!-- Start logo Area -->
     <section class="logo-area">
       <div class="container">
         <div class="row">
-          
+
         </div>
-      </div>	
+      </div>
     </section>
     <!-- End logo Area -->
-    
-            
-    <!-- start contact Area -->		
+
+
+    <!-- start contact Area -->
     <section class="contact-area section-gap" id="contact">
       <div class="container">
         <div class="row d-flex justify-content-center">
@@ -577,12 +576,12 @@
         </div>
         <div>
 
-      </div>										
+      </div>
         <form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
-          <div class="row">	
+          <div class="row">
           <div class="col-lg-6 form-group">
             <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
-          
+
             <input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
 
             <input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control" required="" type="text">
@@ -590,16 +589,16 @@
           <div class="col-lg-6 form-group">
             <textarea class="common-textarea mt-10 form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
             <button class="primary-btn mt-20">Send Message<span class="lnr lnr-arrow-right"></span></button>
-            <div class="alert-msg">								
+            <div class="alert-msg">
           </div>
           </div></div>
-        </form>						
-        
-      </div>	
+        </form>
+
+      </div>
     </section>
-    <!-- end contact Area -->		
-    
-    <!-- start footer Area -->		
+    <!-- end contact Area -->
+
+    <!-- start footer Area -->
     <footer class="footer-area section-gap">
       <div class="container">
         <div class="row">
@@ -631,16 +630,16 @@
                                     <div style="position: absolute; left: -5000px;">
                         <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
                       </div>
-                                  
+
                     <!-- <div class="col-lg-4 col-md-4">
                       <button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
                     </div>  -->
-                  </div>		
+                  </div>
                   <div class="info"></div>
                   </form>
               </div>
               </div>
-          </div>						
+          </div>
           <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
             <div class="single-footer-widget">
               <h6>Follow Us</h6>
@@ -652,22 +651,22 @@
                 <a href="#"><i class="fa fa-behance"></i></a>
               </div>
             </div>
-          </div>							
+          </div>
         </div>
       </div>
-    </footer>	
-    <!-- End footer Area -->			
+    </footer>
+    <!-- End footer Area -->
 
     <script src="{{ url('assets/user/js/vendor/jquery-2.2.4.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="{{ url('assets/user/js/vendor/bootstrap.min.js') }}"></script>
     <script src="{{ url('assets/user/js/jquery.ajaxchimp.min.js') }}"></script>
-    <script src="{{ url('assets/user/js/jquery.magnific-popup.min.js') }}"></script>	
-    <script src="{{ url('assets/user/js/owl.carousel.min.js') }}"></script>			
+    <script src="{{ url('assets/user/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url('assets/user/js/owl.carousel.min.js') }}"></script>
     <script src="{{ url('assets/user/js/jquery.sticky.js') }}"></script>
     <script src="{{ url('assets/user/js/slick.js') }}"></script>
     <script src="{{ url('assets/user/js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ url('assets/user/js/waypoints.min.js') }}"></script>		
-    <script src="{{ url('assets/user/js/main.js') }}"></script>	
+    <script src="{{ url('assets/user/js/waypoints.min.js') }}"></script>
+    <script src="{{ url('assets/user/js/main.js') }}"></script>
   </body>
 </html>
