@@ -141,7 +141,7 @@
               <h2 class="pb-30">Desa Wisata <br>
               Jajar Gumregah</h2>
               <p>
-                Desa Wisata Jajar, yang terletak di Kecamatan Gandusari, Kabupaten Trenggalek, merupakan destinasi wisata yang menawarkan keindahan alam dan budaya lokal yang khas. Dikelilingi oleh hamparan perbukitan hijau dan persawahan yang asri, desa ini menjadi tempat yang ideal untuk wisatawan yang ingin merasakan suasana pedesaan yang tenang dan alami.
+                Desa Wisata Jajar, terletak di Kecamatan Gandusari, Kabupaten Trenggalek, merupakan destinasi wisata yang menawarkan keindahan alam dan budaya lokal yang khas. Dikelilingi oleh hamparan perbukitan hijau dan persawahan yang asri, desa ini menjadi tempat yang ideal untuk wisatawan yang ingin merasakan suasana pedesaan yang tenang dan alami.
               </p>
               <p>
                 Desa ini memiliki luas sekitar 531.137 Ha, dengan jumlah penduduk sekitar 2971 jiwa serta jumlah KK sebanyak 1148. Secara administratif, desa ini memiliki 3 dusun, yaitu: Krajan, Kebon dan Belik. Desa Jajar juga masih erat dalam memegang teguh kebudayaannya yang merupakan wujud nguri-nguri warisan adiluhung dari para leluhur mereka. Salah satu budaya yang masih lestari di Desa Jajar adalah Tiban, tradisi memanggil hujan dengan cara menggelar pertandingan cambuk.
@@ -489,19 +489,19 @@
           <div class="counter-left col-lg-3 col-md-3">
             <div class="single-facts">
               <h2 class="counter">531.137</h2>
-              <p>Wilayah Desa Jajar</p>
+              <p>Luas Desa Jajar (ha)</p>
             </div>
             <div class="single-facts">
               <h2 class="counter">3</h2>
-              <p>Total Dusun</p>
+              <p>Dusun</p>
             </div>
             <div class="single-facts">
               <h2 class="counter">21</h2>
-              <p>Total RT</p>
+              <p>RT</p>
             </div>
             <div class="single-facts">
-              <h2 class="counter">933</h2>
-              <p>Cup of Coffee</p>
+              <h2 class="counter">2971</h2>
+              <p>Warga</p>
             </div>
           </div>
           <div class="faq-content col-lg-9 col-md-9">
