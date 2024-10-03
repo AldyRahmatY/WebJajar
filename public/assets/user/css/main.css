@@ -2795,15 +2795,17 @@ h6 {
   padding: 8px 20px;
   border-radius: 50px;
   font-family: "Poppins", sans-serif;
+  
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #47b2e4;
+  background: #b01afe;
   color: #fff;
 }
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .portfolio .portfolio-item .portfolio-img {
@@ -2815,7 +2817,12 @@ h6 {
   max-width: 400px; /* Ganti width dengan max-width */
   margin-left: auto; /* Memusatkan elemen */
   margin-right: auto; /* Memusatkan elemen */
+  position: relative;
+  transform: translateY(0);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; 
+
 }
+
 
 .portfolio .portfolio-item .portfolio-img img {
   transition: all 0.6s;
@@ -2825,29 +2832,32 @@ h6 {
 }
 
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: 15px;
   bottom: 0;
   z-index: 3;
   right: 15px;
-  transition: all 0.3s;
-  background: rgba(55, 81, 126, 0.8);
-  padding: 25px 40px;
+  transition: all 0.6s;
+  background: rgba(113, 46, 189, 0);
+  padding: 30px 30px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   font-weight: 600;
   color: #fff;
   margin-bottom: 0px;
+
 }
 
 .portfolio .portfolio-item .portfolio-info p {
   color: #f9fcfe;
   font-size: 14px;
   margin-bottom: 0;
+  opacity: 0;
+
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
@@ -2860,7 +2870,7 @@ h6 {
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #47b2e4;
+  color: #b01afe;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -2872,7 +2882,17 @@ h6 {
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
+  background: rgba(113, 46, 189, 0.8);
+  transform: scale(1.1);
   opacity: 1;
+  transform: translateY(20px);
+}
+.portfolio .portfolio-item:hover .portfolio-info p {
+  color: #f9fcfe;
+  font-size: 14px;
+  margin-bottom: 0;
+  opacity: 1;
+
 }
 
 /*--------------------------------------------------------------
@@ -2896,11 +2916,11 @@ h6 {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #47b2e4;
+  border: 1px solid #b01afe;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #47b2e4;
+  background-color: #b01afe;
 }
 
 .portfolio-details .portfolio-info {

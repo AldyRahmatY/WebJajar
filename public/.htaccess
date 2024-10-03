@@ -19,3 +19,12 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+    #disable index view
+    Options -Indexes
+
+    #hide a specific file
+    <Files.env>
+        Order allow,deny
+        Deny from all
+    </Files>
