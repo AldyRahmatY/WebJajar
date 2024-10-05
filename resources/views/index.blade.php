@@ -20,6 +20,7 @@
     <!--
     CSS
     ============================================= -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="{{ url('assets/user/css/linearicons.css') }}">
     <link rel="stylesheet" href="{{ url('assets/user/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/user/css/bootstrap.css') }}">
@@ -29,6 +30,12 @@
     <link rel="stylesheet" href="{{ url('assets/user/css/main.css') }}">
   </head>
   <body>
+    <!-- Loader -->
+    <div class="preloader">
+      <div class="loader">
+        <span class="lnr lnr-hourglass"></span>      
+      </div>
+    </div>
     <!-- start banner Area -->
     <section class="banner-area" id="home">
       <!-- Start Header Area -->
@@ -132,7 +139,7 @@
         <div class="single-info row mt-40">
           <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
             <div class="info-thumb">
-                <iframe style= "width:50vmin; height:300px;" src="https://www.youtube.com/embed/qREgRNzEGeE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="frame" src="https://www.youtube.com/embed/qREgRNzEGeE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
 
           </div>
@@ -152,7 +159,7 @@
               </div>
             <br>
           </div>
-          <br><iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14604.701808554011!2d111.706156!3d-8.158296949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7919a240317a55%3A0xa4eacd07eb2cacd1!2sJajar%2C%20Kec.%20Gandusari%2C%20Kabupaten%20Trenggalek%2C%20Jawa%20Timur!5e1!3m2!1sid!2sid!4v1727802240783!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
+          <br><iframe style="border:0; width:100%; height:350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14604.701808554011!2d111.706156!3d-8.158296949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7919a240317a55%3A0xa4eacd07eb2cacd1!2sJajar%2C%20Kec.%20Gandusari%2C%20Kabupaten%20Trenggalek%2C%20Jawa%20Timur!5e1!3m2!1sid!2sid!4v1727802240783!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
