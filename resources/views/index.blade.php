@@ -132,7 +132,7 @@
         <div class="single-info row mt-40">
           <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
             <div class="info-thumb">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qREgRNzEGeE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style= "width:50vmin; height:300px;" src="https://www.youtube.com/embed/qREgRNzEGeE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
 
           </div>
@@ -169,10 +169,10 @@
         </div>
 
       <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active">Semua</li>
-        <li data-filter=".filter-app">Wisata Edukasi</li>
-        <li data-filter=".filter-card">Wisata Alam</li>
-        <li data-filter=".filter-web">Web</li>
+        <li data-filter="*" class="filter-active align-content-center text-center">Semua</li>
+        <li data-filter=".filter-app" class="align-content-center text-center">Wisata Edukasi</li>
+        <li data-filter=".filter-card" class="align-content-center text-center">Wisata Alam</li>
+        <li data-filter=".filter-web" class="align-content-center text-center">Web</li>
       </ul>
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
