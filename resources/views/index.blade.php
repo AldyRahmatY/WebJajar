@@ -139,6 +139,7 @@
         <div class="single-info row mt-40">
           <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
             <div class="info-thumb">
+
                 <iframe class="frame" src="https://www.youtube.com/embed/qREgRNzEGeE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
 
