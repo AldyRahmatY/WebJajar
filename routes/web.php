@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('user/index');
 });
 
 Route::get('/adminjajar', function () {
-    return view('admindashboard');
+    return view('admin/admindashboard');
+});
+
+
+Route::middleware(['auth', 'multiple-login:admin'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
+    
+Route::get('/adminjajar/wisata', function () {return view('admin/formwisata');});
+});
+Route::middleware('admin')->group(function () {
+    Route::get('/adminjajar/wisata', function () {return view('admin/formwisata');});
+
+    
 });
