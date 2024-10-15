@@ -53,12 +53,12 @@
 
               <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#secvice">Service</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#faq">Faq</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Jajar</a></li>
+                <li><a href="#secvice">Destinasi Wisata</a></li>
+                <li><a href="#gallery">Berita Desa</a></li>
+                <li><a href="#faq">Galeri Desa</a></li>
+                <li><a href="#contact">Hubungi Kami</a></li>
                 <!-- Dropdown -->
                   <li class="dropdown">
                     <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -85,7 +85,7 @@
             <div class="row d-flex justify-content-center">
               <div class="menu-content pb-60 col-lg-8">
                 <div class="title text-center">
-                  <h1 class="mb-10">If you need, Just drop us a line</h1>
+                  <h1 class="mb-10">Hubungi Kami Untuk Lebih Lanjut</h1>
                   <p>Who are in extremely love with eco friendly system.</p>
                 </div>
               </div>

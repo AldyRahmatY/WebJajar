@@ -92,10 +92,71 @@
     </section>
     <!-- End about Area -->
 
+    <!-- Start faq Area -->
+    <section class="section-gap project-area" id="faq">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="menu-content pb-60 col-lg-8">
+            <div class="title text-center">
+              <h1 class="mb-10">GEOGRAFIS DAN SENSUS PEDUDUK DESA</h1>
+              <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="counter-left col-lg-3 col-md-3">
+            <div class="single-facts">
+              <h2 class="counter">531.137</h2>
+              <p>Luas Desa Jajar (ha)</p>
+            </div>
+            <div class="single-facts">
+              <h2 class="counter">3</h2>
+              <p>Dusun</p>
+            </div>
+            <div class="single-facts">
+              <h2 class="counter">21</h2>
+              <p>RT</p>
+            </div>
+            <div class="single-facts">
+              <h2 class="counter">2971</h2>
+              <p>Warga</p>
+            </div>
+          </div>
+          <div class="faq-content col-lg-9 col-md-9">
+            <div class="single-faq">
+              <h2 class="text-uppercase">
+                Are your Templates responsive?
+              </h2>
+              <p>
+                “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
+              </p>
+            </div>
+            <div class="single-faq">
+              <h2 class="text-uppercase">
+                Does it have all the plugin as mentioned?
+              </h2>
+              <p>
+                “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
+              </p>
+            </div>
+            <div class="single-faq">
+              <h2 class="text-uppercase">
+                Can i use the these theme for my client?
+              </h2>
+              <p>
+                “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End faq Area -->
+
 
     <!-- Start project Area -->
 
-    <section id="portfolio" class="portfolio section-gap project-area">
+    <section id="portfolio" class="portfolio section-gap">
       <div class="container" data-aos="fade-up">
         <div class="title text-center">
           <h1 class="mb-10">Destinasi Wisata Desa Jajar</h1>
@@ -209,12 +270,12 @@
 
 
     <!-- Start feature Area -->
-    <section class="feature-area section-gap" id="secvice">
+    <section class="feature-area section-gap project-area" id="berita">
       <div class="container col-lg-10">
         <div class="row d-flex justify-content-center">
           <div class="menu-content pb-60 col-lg-8">
             <div class="title text-center">
-              <h1 class="mb-10">Potensi Desa</h1>
+              <h1 class="mb-10">Berita Desa</h1>
               <p>Who are in extremely love with eco friendly system.</p>
             </div>
           </div>
@@ -293,9 +354,14 @@
 
 
     <!-- Start gallery Area -->
-    <section class="gallery-area" id="gallery">
+    <section class="gallery-area section-gap" id="gallery">
       <div class="container-fluid">
+        <div class="title text-center">
+          <h1 class="mb-10">Galeri Desa</h1>
+          <p>Who are in extremely love with eco friendly system.</p>
+        </div>
         <div class="row no-padding">
+          
           <div class="active-gallery">
             <div class="item single-gallery">
               <img src="{{ url('assets/user/img/g1.jpg') }}" alt="">
@@ -323,86 +389,6 @@
       </div>
     </section>
     <!-- End gallery Area -->
-
-
-
-    <!-- Start faq Area -->
-    <section class="faq-area section-gap" id="faq">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="menu-content pb-60 col-lg-8">
-            <div class="title text-center">
-              <h1 class="mb-10">GEOGRAFIS DAN SENSUS PEDUDUK DESA</h1>
-              <p>Who are in extremely love with eco friendly system.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row d-flex align-items-center">
-          <div class="counter-left col-lg-3 col-md-3">
-            <div class="single-facts">
-              <h2 class="counter">531.137</h2>
-              <p>Luas Desa Jajar (ha)</p>
-            </div>
-            <div class="single-facts">
-              <h2 class="counter">3</h2>
-              <p>Dusun</p>
-            </div>
-            <div class="single-facts">
-              <h2 class="counter">21</h2>
-              <p>RT</p>
-            </div>
-            <div class="single-facts">
-              <h2 class="counter">2971</h2>
-              <p>Warga</p>
-            </div>
-          </div>
-          <div class="faq-content col-lg-9 col-md-9">
-            <div class="single-faq">
-              <h2 class="text-uppercase">
-                Are your Templates responsive?
-              </h2>
-              <p>
-                “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
-              </p>
-            </div>
-            <div class="single-faq">
-              <h2 class="text-uppercase">
-                Does it have all the plugin as mentioned?
-              </h2>
-              <p>
-                “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
-              </p>
-            </div>
-            <div class="single-faq">
-              <h2 class="text-uppercase">
-                Can i use the these theme for my client?
-              </h2>
-              <p>
-                “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End faq Area -->
-
-
-    <!-- Start Video Area -->
-    <section class="video-area pt-40 pb-40">
-      <div class="overlay overlay-bg"></div>
-      <div class="container">
-        <div class="video-content">
-          <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn"><img src="{{ url('assets/user/img/play-btn.png') }}" alt=""></a>
-          <div class="video-desc">
-            <h3 class="h2 text-white text-uppercase">Being unique is the preference</h3>
-            <h4 class="text-white">Youtube video will appear in popover</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Start Video Area -->
-
 
     <!-- Start logo Area -->
     <section class="logo-area">
