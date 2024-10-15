@@ -93,7 +93,7 @@
     <!-- End about Area -->
 
     <!-- Start faq Area -->
-    <section class="section-gap project-area" id="faq">
+    <section class="section-gap project-area">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="menu-content pb-60 col-lg-8">
@@ -276,7 +276,7 @@
           <div class="menu-content pb-60 col-lg-8">
             <div class="title text-center">
               <h1 class="mb-10">Berita Desa</h1>
-              <p>Who are in extremely love with eco friendly system.</p>
+              <p>---</p>
             </div>
           </div>
         </div>
@@ -354,7 +354,7 @@
 
 
     <!-- Start gallery Area -->
-    <section class="gallery-area section-gap" id="gallery">
+    <section class="gallery-area section-gap" id="galeri">
       <div class="container-fluid">
         <div class="title text-center">
           <h1 class="mb-10">Galeri Desa</h1>

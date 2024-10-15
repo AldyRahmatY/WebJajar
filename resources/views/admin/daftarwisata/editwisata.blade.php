@@ -8,25 +8,28 @@
           <div class="card-header">
             <div class="card-title">Edit Data Wisata </div>
           </div>
-          <form action="{{ route('EditDaftarWisata',['daftarwisata' => $daftarwisatas->id]) }}" method="POST" enctype="multipart/form-data">
+          <form action="{{ route('UpdateDaftarWisata',['daftarwisata' => $daftarwisatas->id]) }}" method="POST" enctype="multipart/form-data">
             @method('PATCH')
             @csrf
           <div class="card-body">
             <div class="row">
               <div class="col-md-12">
-                <div 
-                class="form-group">
-                  <label for="gambar"
-                    >Pilih Gambar</label
-                  >
-                  <input
-                    type="file"
-                    class="form-control-file @error('gambar') is-invalid @enderror"
-                    id="gambar"
-                    name="gambar"
-                    value="{{ old('gambar') ?? $daftarwisatas->gambar }}"
-
-                  />
+                <div class="form-group">
+                    <!-- Menampilkan gambar terlebih dahulu -->
+                    <img src="{{ asset('assets/user/img/daftarwisata/' . $daftarwisatas->gambar) }}" alt="tidak ada gambar" width="300" class="mb-3">
+                    <br>
+                    
+                    <!-- Label untuk gambar -->
+                    <label for="gambar">{{ old('gambar') ?? $daftarwisatas->gambar }}</label>
+                    
+                    <!-- Input untuk memilih file -->
+                    <input
+                        type="file"
+                        class="form-control-file @error('gambar') is-invalid @enderror"
+                        id="gambar"
+                        name="gambar"
+                        value="{{ old('gambar') ?? $daftarwisatas->gambar }}"
+                    />
                 </div>
                 <div class="form-group">
                   <label for="nama_wisata">Nama Destinasi Wisata</label>
@@ -40,22 +43,34 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="kategori"
-                    >Kategori Wisata</label
-                  >
+                  <label for="kategori">Kategori Wisata</label>
                   <select
-                    class="form-select @error('kategori') is-invalid @enderror"
-                    id="kategori"
-                    name="kategori"
-                    value="{{ old('kategori') ?? $daftarwisatas->kategori }}"
+                      class="form-select @error('kategori') is-invalid @enderror"
+                      id="kategori"
+                      name="kategori"
                   >
-                    <option>Wisata Edukasi</option>
-                    <option>Wisata Alam</option>
-                    <option>Wisata Kuliner</option>
-                    <option>Homestay</option>
-                    <option>Coming Soon</option>
-                  </select>
-                </div>
+                      <option value="Wisata Edukasi" 
+                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'Wisata Edukasi' ? 'selected' : '' }}>
+                          Wisata Edukasi
+                      </option>
+                      <option value="Wisata Alam" 
+                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'Wisata Alam' ? 'selected' : '' }}>
+                          Wisata Alam
+                      </option>
+                      <option value="Wisata Kuliner" 
+                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'Wisata Kuliner' ? 'selected' : '' }}>
+                          Wisata Kuliner
+                      </option>
+                      <option value="Homestay" 
+                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'Homestay' ? 'selected' : '' }}>
+                          Homestay
+                      </option>
+                      <option value="Coming Soon" 
+                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'Coming Soon' ? 'selected' : '' }}>
+                          Coming Soon
+                      </option>
+                    </select>
+                  </div>
                   <button type="submit" class="btn btn-success">Update</button>
                   <a href="{{ route('admin') }}" class="btn btn-danger">Cancel</a>
                 </form>

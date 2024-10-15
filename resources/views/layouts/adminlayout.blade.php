@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Kaiadmin - Bootstrap 5 Admin Dashboard</title>
+    <title>Admin Jajar</title>
     <meta
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
       name="viewport"
@@ -48,7 +48,7 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="index.html" class="logo">
+            <a href="" class="logo">
               <img
                 src="{{ url('assets/admin/img/kaiadmin/logo_light.svg') }}"
                 alt="navbar brand"
@@ -84,12 +84,13 @@
                   <p>Dashboard</p>
                   <span class="caret"></span>
                 </a>
-                <div class="collapse" id="dashboard">
+                <div class="collapse" id="dashboard" href="">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="../demo1/index.html">
-                        <span class="sub-item">Dashboard 1</span>
-                      </a>
+                      <a class="sub-item" onclick="scrollToElement('layanan')">Daftar Layanan Wisata</a>
+                    </li>
+                    <li>
+                      <a class="sub-item" onclick="scrollToElement('berita')">Daftar Berita</a>
                     </li>
                   </ul>
                 </div>
@@ -220,7 +221,7 @@
                   </ul>
                 </li>
                 <li class="nav-item topbar-icon dropdown hidden-caret">
-                  <a
+                  {{-- <a
                     class="nav-link dropdown-toggle"
                     href="#"
                     id="notifDropdown"
@@ -231,13 +232,13 @@
                   >
                     <i class="fa fa-bell"></i>
                     <span class="notification">4</span>
-                  </a>
+                  </a> --}}
                   <ul
                     class="dropdown-menu notif-box animated fadeIn"
                     aria-labelledby="notifDropdown"
                   >
                     <li>
-                      <div class="dropdown-title">
+                      {{-- <div class="dropdown-title">
                         You have 4 new notification
                       </div>
                     </li>
@@ -294,7 +295,7 @@
                       <a class="see-all" href="javascript:void(0);"
                         >See all notifications<i class="fa fa-angle-right"></i>
                       </a>
-                    </li>
+                    </li> --}}
                   </ul>
                 </li>
 
@@ -312,7 +313,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-user animated fadeIn">
                       <li>
-                        <a class="dropdown-item" href="#">Logout</a>
+                        <a class="dropdown-item" href="/">Logout</a>
                       </li>
                     </div>
                   </ul>
@@ -344,9 +345,6 @@
     <!-- Datatables -->
     <script src="{{ url('assets/admin/js/plugin/datatables/datatables.min.js') }}"></script>
 
-    <!-- Bootstrap Notify -->
-    <script src="{{ url('assets/admin/js/plugin/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
-
     <!-- jQuery Vector Maps -->
     <script src="{{ url('assets/admin/js/plugin/jsvectormap/jsvectormap.min.js') }}"></script>
     <script src="{{ url('assets/admin/js/plugin/jsvectormap/world.js') }}"></script>
@@ -356,9 +354,6 @@
 
     <!-- Kaiadmin JS -->
     <script src="{{ url('assets/admin/js/kaiadmin.min.js') }}"></script>
-
-    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
-    <script src="{{ url('assets/admin/js/setting-demo.js') }}"></script>
     
     <script src="{{ url('assets/admin/js/demo.js') }}"></script>
     <script>
@@ -389,61 +384,26 @@
         fillColor: "rgba(255, 165, 52, .14)",
       });
 
+      function scrollToElement(id) {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
       $(document).ready(function () {
-        $("#basic-datatables").DataTable({});
+    // Initialize DataTable for the first card
+    $('#add-row-1').DataTable({
+        pageLength: 5
+    });
 
-        $("#multi-filter-select").DataTable({
-          pageLength: 5,
-          initComplete: function () {
-            this.api()
-              .columns()
-              .every(function () {
-                var column = this;
-                var select = $(
-                  '<select class="form-select"><option value=""></option></select>'
-                )
-                  .appendTo($(column.footer()).empty())
-                  .on("change", function () {
-                    var val = $.fn.dataTable.util.escapeRegex($(this).val());
+    // Initialize DataTable for the second card
+    $('#add-row-2').DataTable({
+        pageLength: 5
+    });
+});
 
-                    column
-                      .search(val ? "^" + val + "$" : "", true, false)
-                      .draw();
-                  });
 
-                column
-                  .data()
-                  .unique()
-                  .sort()
-                  .each(function (d, j) {
-                    select.append(
-                      '<option value="' + d + '">' + d + "</option>"
-                    );
-                  });
-              });
-          },
-        });
-
-        // Add Row
-        $("#add-row").DataTable({
-          pageLength: 5,
-        });
-
-        var action =
-          '<td> <div class="form-button-action"> <button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
-
-        $("#addRowButton").click(function () {
-          $("#add-row")
-            .dataTable()
-            .fnAddData([
-              $("#addName").val(),
-              $("#addPosition").val(),
-              $("#addOffice").val(),
-              action,
-            ]);
-          $("#addRowModal").modal("hide");
-        });
-      });
     </script>
   </body>
 </html>

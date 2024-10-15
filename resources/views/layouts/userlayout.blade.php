@@ -55,18 +55,18 @@
                 <ul class="navbar-nav">
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#about">Tentang Jajar</a></li>
-                <li><a href="#secvice">Destinasi Wisata</a></li>
-                <li><a href="#gallery">Berita Desa</a></li>
-                <li><a href="#faq">Galeri Desa</a></li>
+                <li><a href="#portfolio">Destinasi Wisata</a></li>
+                <li><a href="#berita">Berita</a></li>
+                <li><a href="#galeri">Galeri</a></li>
                 <li><a href="#contact">Hubungi Kami</a></li>
                 <!-- Dropdown -->
                   <li class="dropdown">
                     <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                      Pages
+                      Info Pemesanan
                     </a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="generic.html">Generic</a>
-                      <a class="dropdown-item" href="elements.html">Elements</a>
+                      <a class="dropdown-item" href="generic.html">Form pendaftaran</a>
+                      <a class="dropdown-item" href="{{ route('admin') }}">Login Admin</a>
                     </div>
                   </li>
                 </ul>

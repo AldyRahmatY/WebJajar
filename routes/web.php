@@ -24,13 +24,17 @@ Route::get('/adminjajar', function () {
 });
 
 
-Route::middleware(['auth', 'multiple-login:admin'])->group(function () {
-    Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
+// Route::middleware(['auth', 'multiple-login:admin'])->group(function () {
+//     Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
     
-Route::get('/adminjajar/wisata', function () {return view('admin/formwisata');});
-});
-Route::middleware('admin')->group(function () {
-    Route::get('/adminjajar/wisata', function () {return view('admin/formwisata');});
-
-    
-});
+// Route::get('/adminjajar/wisata', function () {return view('admin/formwisata');});
+// });
+// Route::middleware('admin')->group(function () {
+//     Route::get('/adminjajar/wisata', function () {return view('admin/formwisata');});
+Route::get('/admin', action: [AdminController::class, 'admin'])->name('admin');
+Route::get('/admin/buatwisata', [AdminController::class, 'buatdaftarwisata'])->name('BuatDaftarWisata');
+Route::post('/admin/buatwisata', [AdminController::class, 'simpandaftarwisata'])->name('SimpanDaftarWisata');
+Route::get('/admin/editdaftarwisata/{daftarwisata}', [AdminController::class, 'editdaftarwisata'])->name('EditDaftarWisata');
+Route::patch('/admin/daftarwisata/{daftarwisata}', [AdminController::class, 'updatedaftarwisata'])->name('UpdateDaftarWisata');
+Route::get('/admin/{daftarwisata}/deletedaftarwisata', [AdminController::class, 'deletedaftarwisata'])->name('DeleteDaftarWisata');
+Route::delete('/admin/{daftarwisata}/deletedaftarwisata/hapus', [AdminController::class, 'destroydaftarwisata'])->name('DestroyDaftarWisata');
