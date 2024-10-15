@@ -167,9 +167,14 @@ document.addEventListener('DOMContentLoaded', function() {
       portfolioItems.forEach(item => {
         if (filterValue === '*' || item.classList.contains(filterValue.slice(1))) {
           item.style.display = 'block'; // Show the item
+          item.style.opacity = 0; // Start with invisible
+          setTimeout(() => {
+            item.style.transition = 'opacity 0.8s'; // Transition effect
+            item.style.opacity =  2; // Fade in
+          }, 90); // Small delay to trigger transition
         } else {
           item.style.display = 'none'; // Hide the item
-        }
+        } 
       });
     });
   });
