@@ -49,20 +49,20 @@
                       id="kategori"
                       name="kategori"
                   >
-                      <option value="Wisata Edukasi" 
-                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'Wisata Edukasi' ? 'selected' : '' }}>
+                      <option value="edukasi" 
+                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'edukasi' ? 'selected' : '' }}>
                           Wisata Edukasi
                       </option>
-                      <option value="Wisata Alam" 
-                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'Wisata Alam' ? 'selected' : '' }}>
+                      <option value="alam" 
+                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'alam' ? 'selected' : '' }}>
                           Wisata Alam
                       </option>
-                      <option value="Wisata Kuliner" 
-                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'Wisata Kuliner' ? 'selected' : '' }}>
+                      <option value="kuliner" 
+                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'kuliner' ? 'selected' : '' }}>
                           Wisata Kuliner
                       </option>
-                      <option value="Homestay" 
-                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'Homestay' ? 'selected' : '' }}>
+                      <option value="homestay" 
+                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'homestay' ? 'selected' : '' }}>
                           Homestay
                       </option>
                       <option value="Coming Soon" 

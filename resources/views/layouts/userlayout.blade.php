@@ -53,16 +53,16 @@
 
               <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang Jajar</a></li>
-                <li><a href="#portfolio">Destinasi Wisata</a></li>
-                <li><a href="#berita">Berita</a></li>
-                <li><a href="#galeri">Galeri</a></li>
-                <li><a href="#contact">Hubungi Kami</a></li>
+                <li><a href="#home">BERANDA</a></li>
+                <li><a href="#about">TENTANG JAJAR</a></li>
+                <li><a href="#portfolio">LAYANAN WISATA</a></li>
+                <li><a href="#berita">BERITA</a></li>
+                <li><a href="#galeri">GALERI</a></li>
+                <li><a href="#contact">HUBUNGI KAMI</a></li>
                 <!-- Dropdown -->
                   <li class="dropdown">
                     <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                      Info Pemesanan
+                      Pemesanan
                     </a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="generic.html">Form pendaftaran</a>
@@ -86,7 +86,6 @@
               <div class="menu-content pb-60 col-lg-8">
                 <div class="title text-center">
                   <h1 class="mb-10">Hubungi Kami Untuk Lebih Lanjut</h1>
-                  <p>Who are in extremely love with eco friendly system.</p>
                 </div>
               </div>
             </div>
@@ -125,44 +124,18 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
                   </p>
                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  <p class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                  <p class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> KKN UM 2024 </a></p>
                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
               </div>
-              <div class="col-lg-5  col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                  <h6>Newsletter</h6>
-                  <p>Stay update with our latest</p>
-                  <div class="" id="mc_embed_signup">
-    
-                      <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-    
-                      <div class="d-flex flex-row">
-    
-                        <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-    
-    
-                                        <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-                                        <div style="position: absolute; left: -5000px;">
-                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                          </div>
-    
-                        <!-- <div class="col-lg-4 col-md-4">
-                          <button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-                        </div>  -->
-                      </div>
-                      <div class="info"></div>
-                      </form>
-                  </div>
-                  </div>
-              </div>
-              <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+              
+              <div class="col-lg-7 col-md-6 col-sm-6 social-widget">
                 <div class="single-footer-widget">
                   <h6>Follow Us</h6>
                   <p>Let us be social</p>
                   <div class="footer-social d-flex align-items-center">
                     <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
                   </div>
                 </div>

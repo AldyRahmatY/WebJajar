@@ -392,17 +392,19 @@
       }
 
       $(document).ready(function () {
-    // Initialize DataTable for the first card
-    $('#add-row-1').DataTable({
-        pageLength: 5
-    });
 
-    // Initialize DataTable for the second card
-    $('#add-row-2').DataTable({
+        $('#add-row-1').DataTable({
         pageLength: 5
-    });
-});
+        });
 
+        $('#add-row-2').DataTable({
+            pageLength: 5
+        });
+
+        $('#add-row-3').DataTable({
+            pageLength: 5
+        });
+      });
 
     </script>
   </body>

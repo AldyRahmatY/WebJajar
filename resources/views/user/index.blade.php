@@ -99,7 +99,7 @@
           <div class="menu-content pb-60 col-lg-8">
             <div class="title text-center">
               <h1 class="mb-10">GEOGRAFIS DAN SENSUS PEDUDUK DESA</h1>
-              <p>Who are in extremely love with eco friendly system.</p>
+              <p>Informasi mengenai Desa Jajar dapat Anda temukan di bawah ini.</p>
             </div>
           </div>
         </div>
@@ -125,26 +125,26 @@
           <div class="faq-content col-lg-9 col-md-9">
             <div class="single-faq">
               <h2 class="text-uppercase">
-                Are your Templates responsive?
+                Sejarah Terbentuknya Desa Jajar
               </h2>
               <p>
-                “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
+                Menurut cerita para sesepuh desa, Desa Jajar terbentuk sekitar tahun 1700-an. Dua orang dari Tembayat, Jawa Tengah, bernama Kyai Abdul Rohman dan Joyogati, membabat alas dan menemukan dua pohon Lo yang berjajar besar dan tinggi. Karena itu, mereka menamai wilayah tersebut Desa Jajar.
               </p>
             </div>
             <div class="single-faq">
               <h2 class="text-uppercase">
-                Does it have all the plugin as mentioned?
+                JAJAR GUMREGAH TIJI TIBEH Mukti Siji Mukti Kabeh
               </h2>
               <p>
-                “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
+                "Jajar Gumregah Tiji Tibeh" bermakna kebersamaan dan gotong royong, di mana "Mukti Siji Mukti Kabeh" berarti jika satu orang sejahtera, semua ikut sejahtera. Filosofi ini menekankan pentingnya persatuan dan saling membantu dalam mencapai kemakmuran bersama.
               </p>
             </div>
             <div class="single-faq">
               <h2 class="text-uppercase">
-                Can i use the these theme for my client?
+                Menunggu kabar
               </h2>
               <p>
-                “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
+                Informasi lebih lanjut mengenai Desa Jajar akan segera kami update. Terima kasih atas perhatiannya.
               </p>
             </div>
           </div>
@@ -160,110 +160,43 @@
       <div class="container" data-aos="fade-up">
         <div class="title text-center">
           <h1 class="mb-10">Destinasi Wisata Desa Jajar</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore  et dolore magna aliqua.</p>
+          <p>Berikut daftar destinasi wisata menarik yang dapat Anda kunjungi di Desa Jajar.</p>
         </div>
 
       <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
         <li data-filter="*" class="filter-active align-content-center text-center">Semua</li>
-        <li data-filter=".filter-app" class="align-content-center text-center">Wisata Edukasi</li>
-        <li data-filter=".filter-card" class="align-content-center text-center">Wisata Alam</li>
-        <li data-filter=".filter-web" class="align-content-center text-center">Web</li>
+        <li data-filter=".filter-edukasi" class="align-content-center text-center">Wisata Edukasi</li>
+        <li data-filter=".filter-alam" class="align-content-center text-center">Wisata Alam</li>
+        <li data-filter=".filter-kuliner" class="align-content-center text-center">Wisata Kuliner</li>
+        <li data-filter=".filter-homestay" class="align-content-center text-center">Homestay</li>
       </ul>
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar1.jpg') }}" class="img-fluid" alt=""></div>
+        @forelse ($daftarwisatas as $wisata)
+        <div class="col-lg-4 col-md-6 portfolio-item filter-{{ $wisata->kategori }}">
+          <div class="portfolio-img">
+            <img src="{{ url('assets/user/img/daftarwisata/'. $wisata->gambar) }}" class="img-fluid" alt="">
+          </div>
           <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <a href="img/jajar1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            <h4>{{ $wisata->nama_wisata }}</h4>
+            @if($wisata->kategori == 'alam')
+            <p>Wisata Alam</p>
+            @elseif($wisata->kategori == 'edukasi')
+                <p>Wisata Edukasi</p>
+            @elseif($wisata->kategori == 'kuliner')
+                <p>Wisata Kuliner</p>
+            @elseif($wisata->kategori == 'homestay')
+                <p>Homestay</p>
+            @else
+                <p>{{ $wisata->kategori }}</p>
+            @endif
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar2.jpg') }}" class="img-fluid" alt=""></div>
-          <div class="portfolio-info">
-            <h4>Web 3</h4>
-            <p>Web</p>
-            <a href="img/jajar2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar1.jpg') }}" class="img-fluid" alt=""></div>
-          <div class="portfolio-info">
-            <h4>App 2</h4>
-            <p>App</p>
-            <a href="img/jajar1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-img"><img src="{{ url('assets/user/img/g1.jpg') }}" class="img-fluid" alt=""></div>
-          <div class="portfolio-info">
-            <h4>Card 2</h4>
-            <p>Card</p>
-            <a href="img/g1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar2.jpg') }}" class="img-fluid" alt=""></div>
-          <div class="portfolio-info">
-            <h4>Web 2</h4>
-            <p>Web</p>
-            <a href="img/jajar2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar1.jpg') }}" class="img-fluid" alt=""></div>
-          <div class="portfolio-info">
-            <h4>App 3</h4>
-            <p>App</p>
-            <a href="img/jajar1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-img"><img src="{{ url('assets/user/img/g1.jpg') }}" class="img-fluid" alt=""></div>
-          <div class="portfolio-info">
-            <h4>Card 1</h4>
-            <p>Card</p>
-            <a href="img/g1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-img"><img src="{{ url('assets/user/img/g1.jpg') }}" class="img-fluid" alt=""></div>
-          <div class="portfolio-info">
-            <h4>Card 3</h4>
-            <p>Card</p>
-            <a href="img/g1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-img"><img src="{{ url('assets/user/img/jajar2.jpg') }}" class="img-fluid" alt=""></div>
-          <div class="portfolio-info">
-            <h4>Web 3</h4>
-            <p>Web</p>
-            <a href="img/jajar2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
+        @empty
+        <p>Tidak ada wisata yang ditemukan.</p>
+        @endforelse
       </div>
-
       </div>
       </section>
     <!-- End project Area -->
@@ -276,78 +209,30 @@
           <div class="menu-content pb-60 col-lg-8">
             <div class="title text-center">
               <h1 class="mb-10">Berita Desa</h1>
-              <p>---</p>
+              <p>Simak berita terbaru dan perkembangan terkini seputar Desa Jajar di sini.</p>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 ">
+
+        @forelse ($beritas as $berita)
+          <div class="col-lg-4 col-md-4">
             <div class="single-feature mb-30">
-              <div class="title d-flex flex-row pb-20">
-                <span class="lnr lnr-user"></span>
-                <h4><a href="#">Expert Technicians</a></h4>
-              </div>
-              <p>
-                Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>
+              <div style="display: flex; justify-content: center;">
+                <img src="{{ url('assets/user/img/berita/'. $berita->gambar) }}" alt="" width="109%" height="300" style="object-fit: cover; display: block;">
+                </div><br>
+                <div class="title d-flex flex-row pb-20">
+                    <h4><a href="#">{{ $berita->judul}}</a></h4>
+                </div>
+                <p>{{ Str::limit($berita->isi, 250, '...') }}</p>
+
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="single-feature mb-30">
-              <div class="title d-flex flex-row pb-20">
-                <span class="lnr lnr-license"></span>
-                <h4><a href="#">Professional Service</a></h4>
-              </div>
-              <p>
-                Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="single-feature mb-30">
-              <div class="title d-flex flex-row pb-20">
-                <span class="lnr lnr-phone"></span>
-                <h4><a href="#">Great Support</a></h4>
-              </div>
-              <p>
-                Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="single-feature">
-              <div class="title d-flex flex-row pb-20">
-                <span class="lnr lnr-rocket"></span>
-                <h4><a href="#">Technical Skills</a></h4>
-              </div>
-              <p>
-                Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="single-feature">
-              <div class="title d-flex flex-row pb-20">
-                <span class="lnr lnr-diamond"></span>
-                <h4><a href="#">Highly Recomended</a></h4>
-              </div>
-              <p>
-                Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="single-feature">
-              <div class="title d-flex flex-row pb-20">
-                <span class="lnr lnr-bubble"></span>
-                <h4><a href="#">Positive Reviews</a></h4>
-              </div>
-              <p>
-                Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-              </p>
-            </div>
-          </div>
         </div>
+        @empty
+        <p>Tidak ada berita yang ditemukan.</p>
+        @endforelse
+        
+
       </div>
     </section>
     <!-- End feature Area -->
@@ -358,7 +243,6 @@
       <div class="container-fluid">
         <div class="title text-center">
           <h1 class="mb-10">Galeri Desa</h1>
-          <p>Who are in extremely love with eco friendly system.</p>
         </div>
         <div class="row no-padding">
           

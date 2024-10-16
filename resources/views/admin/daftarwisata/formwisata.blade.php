@@ -48,10 +48,10 @@
                     name="kategori"
                     value="{{ old('kategori') }}"
                   >
-                    <option>Wisata Edukasi</option>
-                    <option>Wisata Alam</option>
-                    <option>Wisata Kuliner</option>
-                    <option>Homestay</option>
+                    <option value="edukasi">Wisata Edukasi</option>
+                    <option value="alam">Wisata Alam</option>
+                    <option value="kuliner">Wisata Kuliner</option>
+                    <option value="homestay">Homestay</option>
                     <option>Coming Soon</option>
                   </select>
                 </div>
