@@ -39,27 +39,43 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-
-    public function Login(Request $request)
+    public function login()
     {
-        $input = $request->all();
-
-        $this->validate($request, [
-            'email' => 'required|email',
-            'password' => 'required',
+        return view('user.login', [
+            'title' => 'Login'
         ]);
+    }
 
-        if (auth()->attempt(array('email' => $input['email'], 'password' => $input['password']))) {
-            if (auth()->user()->role == 'admin') {
-                return redirect()->route('admin');
-            } else if (auth()->user()->role == 'doctor') {
-                return redirect()->route('doctor');
-            } else {
-                return redirect()->route('home');
-            }
-        } else {
-            return redirect()->route('login')
-                ->with('error', 'Email-Address And Password Are Wrong.');
+    public function authenticate(Request $request)
+    {
+        $credentials = $request->validate(
+            [
+                'email' => 'required|email:dns',
+                'password' => 'required'
+            ],
+            [
+                'email.required' => 'Email Harus Diisi',
+                'password.required' => 'Kata Sandi Harus Diisi',
+            ]
+        );
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+
+            return redirect()->route('home');
         }
+
+        return back()->with('LoginError', 'Login Gagal, Email atau Kata Sandi Salah');
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/');
     }
 }

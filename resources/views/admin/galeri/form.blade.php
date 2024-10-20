@@ -16,16 +16,13 @@
                 <div 
                 class="form-group">
                   <label for="gambar"
-                    >Pilih Gambar Untuk Diunggah Ke Galeri</label
-                  >
+                    >Pilih Gambar Untuk Diunggah Ke Galeri</label>
                   <input
                     type="file"
                     class="form-control-file @error('gambar') is-invalid @enderror"
                     id="gambar"
                     name="gambar"
-                    value="{{ old('gambar') }}">
-
-                  />
+                    value="{{ old('gambar') }}"/>
                 </div>
                 <div class="form-group">
                   <label for="nama_galeri">Judul Galeri</label>

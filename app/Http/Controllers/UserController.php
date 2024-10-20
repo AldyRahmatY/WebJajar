@@ -19,4 +19,13 @@ class UserController extends Controller
 
         return view('user.index', compact('users', 'beritas', 'daftarwisatas', 'galeris'));
     }
+
+    public function berita($beritas)
+    {
+            // Mencari artikel dengan id yang sesuai pada database melalui model Article
+            $value = berita::findOrFail($beritas);
+    
+            // Mengembalikan view infoArtikel.blade.php dengan membawa variabel $value
+            return view('user.berita', ['berita' => $value]);
+    }
 }

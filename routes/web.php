@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LoginController;
 
 
 /*
@@ -21,14 +22,13 @@ Route::get('/', function () {
 });
 Route::get('/', action: [UserController::class, 'index'])->name('Index');
 
+Route::get('/login', action: [LoginController::class, 'login'])->name('Login');
+Route::post('/login', action: [LoginController::class, 'authenticate'])->name('Authenticate');
+Route::get('/logout', action: [LoginController::class, 'logout'])->name('Logout');
+route::get('/berita{berita}', [UserController::class, 'berita'])->name('BeritaLengkap');
 
-// Route::middleware(['auth', 'multiple-login:admin'])->group(function () {
-//     Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
-    
-// Route::get('/adminjajar/wisata', function () {return view('admin/formwisata');});
-// });
-// Route::middleware('admin')->group(function () {
-//     Route::get('/adminjajar/wisata', function () {return view('admin/formwisata');});
+
+Route::middleware('admin')->group(function () {
 
 Route::get('/admin', action: [AdminController::class, 'admin'])->name('admin');
 
@@ -55,3 +55,5 @@ Route::get('/admin/editgaleri/{galeri}', [AdminController::class, 'editgaleri'])
 Route::patch('/admin/galeri/{galeri}', [AdminController::class, 'updategaleri'])->name('UpdateGaleri');
 Route::get('/admin/{galeri}/deletegaleri', [AdminController::class, 'deletegaleri'])->name('DeleteGaleri');
 Route::delete('/admin/{galeri}/deletegaleri/hapus', [AdminController::class, 'destroygaleri'])->name('DestroyGaleri');
+
+});

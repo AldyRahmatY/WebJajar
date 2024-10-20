@@ -23,9 +23,8 @@
                     class="form-control-file @error('gambar') is-invalid @enderror"
                     id="gambar"
                     name="gambar"
-                    value="{{ old('gambar') }}">
+                    value="{{ old('gambar') }}"/>
 
-                  />
                 </div>
                 <div class="form-group">
                   <label for="nama_wisata">Nama Destinasi Wisata</label>

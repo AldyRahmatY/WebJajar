@@ -48,14 +48,14 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="" class="logo">
+            {{-- <a href="" class="logo">
               <img
                 src="{{ url('assets/admin/img/kaiadmin/logo_light.svg') }}"
                 alt="navbar brand"
                 class="navbar-brand"
                 height="20"
               />
-            </a>
+            </a> --}}
             <div class="nav-toggle">
               <button class="btn btn-toggle toggle-sidebar">
                 <i class="gg-menu-right"></i>
@@ -106,14 +106,14 @@
           <div class="main-header-logo">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="dark">
-              <a href="index.html" class="logo">
+              {{-- <a href="index.html" class="logo">
                 <img
                   src="{{ url('assets/admin/img/kaiadmin/logo_light.svg') }}"
                   alt="navbar brand"
                   class="navbar-brand"
                   height="20"
                 />
-              </a>
+              </a> --}}
               <div class="nav-toggle">
                 <button class="btn btn-toggle toggle-sidebar">
                   <i class="gg-menu-right"></i>
@@ -307,12 +307,15 @@
                     aria-expanded="false"
                   >
                     <span class="profile-username">
-                      <span class="op-7">Hi,</span>
-                      <span class="fw-bold">Hizrian</span>
+                      <span class="op-7">Hi, </span>
+                      <span class="fw-bold">{{ auth()->user()->nama }}</span>
                     </span>
                   </a>
                   <ul class="dropdown-menu dropdown-user animated fadeIn">
                       <li>
+                        @if (Auth::check())
+                        <a class="dropdown-item" href="{{ route('Index') }}">Kembali Ke Halaman Utama</a>
+                        @endif
                         <a class="dropdown-item" href="/">Logout</a>
                       </li>
                     </div>
@@ -325,7 +328,7 @@
 
         @yield('content')
 
-            <!--   Core JS Files   -->
+    <!--   Core JS Files   -->
     <script src="{{ url('assets/admin/js/core/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ url('assets/admin/js/core/popper.min.js') }}"></script>
     <script src="{{ url('assets/admin/js/core/bootstrap.min.js') }}"></script>

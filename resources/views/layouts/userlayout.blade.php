@@ -44,7 +44,7 @@
       <header class="default-header">
         <nav class="navbar navbar-expand-lg  navbar-light">
           <div class="container">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand" href="{{ url('') }}">
                 <img src="{{ url('assets/user/img/logo.png') }}" alt="">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,20 +53,25 @@
 
               <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                <li><a href="#home">BERANDA</a></li>
-                <li><a href="#about">TENTANG JAJAR</a></li>
-                <li><a href="#portfolio">LAYANAN WISATA</a></li>
-                <li><a href="#berita">BERITA</a></li>
-                <li><a href="#galeri">GALERI</a></li>
-                <li><a href="#contact">HUBUNGI KAMI</a></li>
+                  <li><a href="{{ url('/#home') }}">BERANDA</a></li>
+                  <li><a href="{{ url('/#about') }}">TENTANG JAJAR</a></li>
+                  <li><a href="{{ url('/#portfolio') }}">LAYANAN WISATA</a></li>
+                  <li><a href="{{ url('/#berita') }}">BERITA</a></li>
+                  <li><a href="{{ url('/#galeri') }}">GALERI</a></li>
+                  <li><a href="{{ url('/#contact') }}">PEMESANAN</a></li>
+                  @if (!Auth::check())
+                  <li><a href="{{ route('Login') }}">LOGIN ADMIN</a></li>
+                  @endif
+                  @if (Auth::check())
                 <!-- Dropdown -->
                   <li class="dropdown">
                     <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                      Pemesanan
+                      ADMIN WEB
                     </a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="generic.html">Form pendaftaran</a>
-                      <a class="dropdown-item" href="{{ route('admin') }}">Login Admin</a>
+                      <a class="dropdown-item" href="{{ route('admin') }}">Halaman Admin</a>
+                      <a class="dropdown-item" href="{{ route('Logout') }}">Logout</a>
+                      @endif
                     </div>
                   </li>
                 </ul>
@@ -79,7 +84,7 @@
 
     @yield('content')
 
-        <!-- start contact Area -->
+        {{-- <!-- start contact Area -->
         <section class="contact-area section-gap" id="contact">
           <div class="container">
             <div class="row d-flex justify-content-center">
@@ -111,7 +116,7 @@
     
           </div>
         </section>
-        <!-- end contact Area -->
+        <!-- end contact Area --> --}}
     
         <!-- start footer Area -->
         <footer class="footer-area section-gap">

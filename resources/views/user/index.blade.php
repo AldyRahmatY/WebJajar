@@ -215,22 +215,40 @@
         </div>
         <div class="row">
 
-        @forelse ($beritas as $berita)
+          @forelse ($beritas->take(6) as $berita) <!-- Membatasi hanya 6 berita -->
           <div class="col-lg-4 col-md-4">
-            <div class="single-feature mb-30">
-              <div style="display: flex; justify-content: center;">
-                <img src="{{ url('assets/user/img/berita/'. $berita->gambar) }}" alt="" width="109%" height="300" style="object-fit: cover; display: block;">
+            <a href="{{ route('BeritaLengkap', ['berita' => $berita->id]) }}" style="text-decoration: none; color: inherit;">
+        
+              <div class="single-feature mb-30">
+                <div style="display: flex; justify-content: center;">
+                  <img src="{{ url('assets/user/img/berita/'. $berita->gambar) }}" alt="" width="109%" height="300" style="object-fit: cover; display: block;">
                 </div><br>
                 <div class="title d-flex flex-row pb-20">
-                    <h4><a href="#">{{ $berita->judul}}</a></h4>
+                  <div class="text-left"> <!-- Memastikan tanggal berada di kiri -->
+                    <small>{{ $berita->created_at->format('H:i, d M Y') }}</small> <!-- Tanggal upload -->
+                  </div>
                 </div>
+                <hr>
+                <h4><a href="{{ route('BeritaLengkap', ['berita' => $berita->id]) }}">{{ $berita->judul }}</a></h4>
                 <p>{{ Str::limit($berita->isi, 250, '...') }}</p>
-
-            </div>
-        </div>
+                <div class="text-center">
+                  <a href="{{ route('BeritaLengkap', ['berita' => $berita->id]) }}" class="btn btn-outline-dark">Selengkapnya</a>
+                </div>
+              </div>
+            </a>
+          </div>
         @empty
-        <p>Tidak ada berita yang ditemukan.</p>
+          <p>Tidak ada berita yang ditemukan.</p>
         @endforelse
+        
+        
+        <!-- Jika ada lebih dari 6 berita, tampilkan tombol "Lihat Semua" -->
+        @if ($beritas->count() > 6)
+          <div class="col-lg-12 text-center mt-4">
+            <a href="{{ route('semua-berita') }}" class="btn btn-primary">Lihat Semua</a> <!-- Tombol untuk melihat semua berita -->
+          </div>
+        @endif
+        
         
 
       </div>
@@ -247,27 +265,12 @@
         <div class="row no-padding">
           
           <div class="active-gallery">
+            @forelse ($galeris as $galeri)
             <div class="item single-gallery">
-              <img src="{{ url('assets/user/img/g1.jpg') }}" alt="">
+              <img src="{{ url('assets/user/img/galeri/'. $galeri->gambar) }}" alt="">
             </div>
-            <div class="item single-gallery">
-              <img src="{{ url('assets/user/img/g2.jpg') }}" alt="">
-            </div>
-            <div class="item single-gallery">
-              <img src="{{ url('assets/user/img/g3.jpg') }}" alt="">
-            </div>
-            <div class="item single-gallery">
-              <img src="{{ url('assets/user/img/g4.jpg') }}" alt="">
-            </div>
-            <div class="item single-gallery">
-              <img src="{{ url('assets/user/img/jajar1.jpg') }}" alt="">
-            </div>
-            <div class="item single-gallery">
-              <img src="{{ url('assets/user/img/jajar2.jpg') }}" alt="">
-            </div>
-            <div class="item single-gallery">
-              <img src="{{ url('assets/user/img/umbulan1.jpg') }}" alt="">
-            </div>
+            @empty
+            @endforelse
           </div>
         </div>
       </div>
