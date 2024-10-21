@@ -65,6 +65,10 @@
                           {{ (old('kategori') ?? $daftarwisatas->kategori) == 'homestay' ? 'selected' : '' }}>
                           Homestay
                       </option>
+                      <option value="sewa" 
+                          {{ (old('kategori') ?? $daftarwisatas->kategori) == 'sewa' ? 'selected' : '' }}>
+                      Persewaan Tempat
+                      </option>
                       <option value="Coming Soon" 
                           {{ (old('kategori') ?? $daftarwisatas->kategori) == 'Coming Soon' ? 'selected' : '' }}>
                           Coming Soon

@@ -159,8 +159,8 @@
     <section id="portfolio" class="portfolio section-gap">
       <div class="container" data-aos="fade-up">
         <div class="title text-center">
-          <h1 class="mb-10">Destinasi Wisata Desa Jajar</h1>
-          <p>Berikut daftar destinasi wisata menarik yang dapat Anda kunjungi di Desa Jajar.</p>
+          <h1 class="mb-10">Layanan Wisata Desa Jajar</h1>
+          <p>Berikut daftar layanan wisata menarik yang dapat Anda kunjungi di Desa Jajar.</p>
         </div>
 
       <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -169,6 +169,7 @@
         <li data-filter=".filter-alam" class="align-content-center text-center">Wisata Alam</li>
         <li data-filter=".filter-kuliner" class="align-content-center text-center">Wisata Kuliner</li>
         <li data-filter=".filter-homestay" class="align-content-center text-center">Homestay</li>
+        <li data-filter=".filter-sewa" class="align-content-center text-center">Persewaan Tempat</li>
       </ul>
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -188,6 +189,8 @@
                 <p>Wisata Kuliner</p>
             @elseif($wisata->kategori == 'homestay')
                 <p>Homestay</p>
+            @elseif($wisata->kategori == 'sewa')
+                <p>Persewaan Tempat</p>
             @else
                 <p>{{ $wisata->kategori }}</p>
             @endif

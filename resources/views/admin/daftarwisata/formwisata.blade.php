@@ -51,6 +51,8 @@
                     <option value="alam">Wisata Alam</option>
                     <option value="kuliner">Wisata Kuliner</option>
                     <option value="homestay">Homestay</option>
+                    <option value="sewa">Persewaan Tempat</option>
+
                     <option>Coming Soon</option>
                   </select>
                 </div>

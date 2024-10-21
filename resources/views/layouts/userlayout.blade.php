@@ -4,7 +4,7 @@
   <!-- Mobile Specific Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicon-->
-  <link rel="shortcut icon" href="img/fav.png">
+  <link rel="shortcut icon" href="{{ url('assets/user/img/logoatas.png') }}">
   <!-- Author Meta -->
   <meta name="author" content="colorlib">
   <!-- Meta Description -->
@@ -45,7 +45,7 @@
         <nav class="navbar navbar-expand-lg  navbar-light">
           <div class="container">
               <a class="navbar-brand" href="{{ url('') }}">
-                <img src="{{ url('assets/user/img/logo.png') }}" alt="">
+                <img src="{{ url('assets/user/img/logo.png') }}" alt="" height="65">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="text-white lnr lnr-menu"></span>
@@ -58,7 +58,7 @@
                   <li><a href="{{ url('/#portfolio') }}">LAYANAN WISATA</a></li>
                   <li><a href="{{ url('/#berita') }}">BERITA</a></li>
                   <li><a href="{{ url('/#galeri') }}">GALERI</a></li>
-                  <li><a href="{{ url('/#contact') }}">PEMESANAN</a></li>
+                  <li><a href="https://forms.gle/xAx52tMegwhmGk7BA" target="_blank">PEMESANAN</a></li>
                   @if (!Auth::check())
                   <li><a href="{{ route('Login') }}">LOGIN ADMIN</a></li>
                   @endif
@@ -119,31 +119,47 @@
         <!-- end contact Area --> --}}
     
         <!-- start footer Area -->
-        <footer class="footer-area section-gap">
+        <footer class="footer-area section-half">
           <div class="container">
             <div class="row">
-              <div class="col-lg-5 col-md-6 col-sm-6">
+              <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
-                  <h6>About Us</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                  <a class="navbar-brand" href="{{ url('') }}">
+                    <img src="{{ url('assets/user/img/logo.png') }}" alt="" height="65">
+                  </a>
+                  <h6>
+                    "JAJAR GUMREGAH TIJI TIBEH" - Mukti Siji Mukti Kabeh
+                  </h6>
+                  <p>Desa Jajar, Keca. Gandusari, Kabupaten Trenggalek, Jawa Timur 66372
                   </p>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  <p class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> KKN UM 2024 </a></p>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
               </div>
+
               
-              <div class="col-lg-7 col-md-6 col-sm-6 social-widget">
+              
+              <div class="col-lg-3 col-md-3 col-sm-3 social-widget">
                 <div class="single-footer-widget">
-                  <h6>Follow Us</h6>
-                  <p>Let us be social</p>
+                  <h6>Media Sosial Kami</h6>
                   <div class="footer-social d-flex align-items-center">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-youtube"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </div>
+                    <a href="#"><i class="fa fa-facebook" style="font-size: 24px;"></i></a>
+                    <a href="#"><i class="fa fa-youtube" style="font-size: 24px;"></i></a>
+                    <a href="#"><i class="fa fa-instagram" style="font-size: 24px;"></i></a>
+                  </div>                  
                 </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 single-footer-widget">
+                <h6>Kontak Kami</h6>
+                <div style="display: flex; align-items: center;">
+                  <i class="fa fa-phone" style="font-size: 20px; margin-right: 10px;"></i> 
+                  <p style="font-size: 16px; margin: 0;"> - 082235084215</p>
+                </div>
+                <div style="display: flex; align-items: center;"class="mt-2">
+                  <i class="fa fa-envelope" style="font-size: 20px; margin-right: 10px;"></i> 
+                  <p style="font-size: 16px; margin: 0;"> - dewijargum@gmail.com</p>
+                </div>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  <p class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Made By KKN UM 2024 </a></p>
               </div>
             </div>
           </div>
