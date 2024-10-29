@@ -38,8 +38,6 @@
     <link rel="stylesheet" href="{{ url('assets/admin/css/plugins.min.css') }}" />
     <link rel="stylesheet" href="{{ url('assets/admin/css/kaiadmin.min.css') }}" />
 
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="{{ url('assets/admin/css/demo.css') }}" />
   </head>
   <body>
     <div class="wrapper">
@@ -343,14 +341,9 @@
     <script src="{{ url('assets/admin/js/plugin/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
 
     <!-- Chart Circle -->
-    <script src="{{ url('assets/admin/js/plugin/chart-circle/circles.min.js') }}"></script>
 
     <!-- Datatables -->
     <script src="{{ url('assets/admin/js/plugin/datatables/datatables.min.js') }}"></script>
-
-    <!-- jQuery Vector Maps -->
-    <script src="{{ url('assets/admin/js/plugin/jsvectormap/jsvectormap.min.js') }}"></script>
-    <script src="{{ url('assets/admin/js/plugin/jsvectormap/world.js') }}"></script>
 
     <!-- Sweet Alert -->
     <script src="{{ url('assets/admin/js/plugin/sweetalert/sweetalert.min.js') }}"></script>

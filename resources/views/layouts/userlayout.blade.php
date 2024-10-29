@@ -141,9 +141,9 @@
                 <div class="single-footer-widget">
                   <h6>Media Sosial Kami</h6>
                   <div class="footer-social d-flex align-items-center">
-                    <a href="#"><i class="fa fa-facebook" style="font-size: 24px;"></i></a>
-                    <a href="#"><i class="fa fa-youtube" style="font-size: 24px;"></i></a>
-                    <a href="#"><i class="fa fa-instagram" style="font-size: 24px;"></i></a>
+                    <a href="https://web.facebook.com/kantor.membangun.3?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook" style="font-size: 24px;"></i></a>
+                    <a href="https://www.youtube.com/@JAJARGUMREGAH/featured" target="_blank"><i class="fa fa-youtube" style="font-size: 24px;"></i></a>
+                    <a href="https://www.instagram.com/desawisatajajargumregah/" target="_blank"><i class="fa fa-instagram" style="font-size: 24px;"></i></a>
                   </div>                  
                 </div>
               </div>
