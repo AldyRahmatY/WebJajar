@@ -7,11 +7,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
       name="viewport"
     />
-    <link
-      rel="icon"
-      href="{{ url('assets/user/img/logoatas.png') }}"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="{{ asset('assets/user/img/iconlogo.png') }}" type="image/x-icon" />
 
     <!-- Fonts and icons -->
     <script src="{{ url('assets/admin/js/plugin/webfont/webfont.min.js') }}"></script>
@@ -314,7 +310,7 @@
                         @if (Auth::check())
                         <a class="dropdown-item" href="{{ route('Index') }}">Kembali Ke Halaman Utama</a>
                         @endif
-                        <a class="dropdown-item" href="/">Logout</a>
+                        <a class="dropdown-item" href="{{ route('Logout') }}">Logout</a>
                       </li>
                     </div>
                   </ul>

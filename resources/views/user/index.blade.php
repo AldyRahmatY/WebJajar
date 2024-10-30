@@ -12,7 +12,7 @@
                   <h1 class="text-uppercase text-white">Jajar Gumregah</h1>
                   <p class="text-white">Selamat Datang di Desa Wisata Jajar Gumregah, Tempat di Mana Alam, Budaya,<br>
                     dan Kehangatan Penduduk Berpadu Menyambut Anda!</p>
-                  <a href="#" class="text-uppercase header-btn">Discover Now</a>
+                  <a href="{{ url('/#about') }}" class="text-uppercase header-btn">Jelajahi Sekarang</a>
                 </div>
               </div>
 
@@ -28,7 +28,7 @@
                   <h4 class="text-white mb-20 text-uppercase">Wisata Alam dan Edukasi</h4>
                   <h1 class="text-uppercase text-white">Jajar Gumregah</h1>
                   <p class="text-white">Jelajahi keindahan alam sambil menambah wawasan dengan<br> pengalaman wisata edukasi yang tak terlupakan di Jajar     Gumregah.</p>
-                  <a href="#" class="text-uppercase header-btn">Discover Now</a>
+                  <a href="{{ url('/#about') }}" class="text-uppercase header-btn">Jelajahi Sekarang</a>
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@
                   <h4 class="text-white mb-20 text-uppercase">Suasana Desa Yang Menenangkan</h4>
                   <h1 class="text-uppercase text-white">Jajar Gumregah</h1>
                   <p class="text-white">Nikmati Udara Segar dan Pemandangan Hijau yang Menyegarkan <br>di Desa Jajar Gumregah, Suasana yang Membawa Ketenangan.</p>
-                  <a href="#" class="text-uppercase header-btn">Discover Now</a>
+                  <a href="{{ url('/#about') }}" class="text-uppercase header-btn">Jelajahi Sekarang</a>
                 </div>
               </div>
             </div>
@@ -139,14 +139,14 @@
                 "Jajar Gumregah Tiji Tibeh" bermakna kebersamaan dan gotong royong, di mana "Mukti Siji Mukti Kabeh" berarti jika satu orang sejahtera, semua ikut sejahtera. Filosofi ini menekankan pentingnya persatuan dan saling membantu dalam mencapai kemakmuran bersama.
               </p>
             </div>
-            <div class="single-faq">
+            {{-- <div class="single-faq">
               <h2 class="text-uppercase">
                 Menunggu kabar
               </h2>
               <p>
                 Informasi lebih lanjut mengenai Desa Jajar akan segera kami update. Terima kasih atas perhatiannya.
               </p>
-            </div>
+            </div> --}}
           </div>
         </div>
       </div>
@@ -248,7 +248,7 @@
         <!-- Jika ada lebih dari 6 berita, tampilkan tombol "Lihat Semua" -->
         @if ($beritas->count() > 6)
           <div class="col-lg-12 text-center mt-4">
-            <a href="{{ route('semua-berita') }}" class="btn btn-primary">Lihat Semua</a> <!-- Tombol untuk melihat semua berita -->
+            <a href="{{ route('SemuaBerita') }}" class="btn btn-outline-dark">Lihat Semua</a> <!-- Tombol untuk melihat semua berita -->
           </div>
         @endif
         

@@ -25,7 +25,9 @@ Route::get('/', action: [UserController::class, 'index'])->name('Index');
 Route::get('/login', action: [LoginController::class, 'login'])->name('Login');
 Route::post('/login', action: [LoginController::class, 'authenticate'])->name('Authenticate');
 Route::get('/logout', action: [LoginController::class, 'logout'])->name('Logout');
+Route::get('/beritas', [UserController::class, 'semuaberita'])->name('SemuaBerita');
 route::get('/berita{berita}', [UserController::class, 'berita'])->name('BeritaLengkap');
+
 
 
 Route::middleware('admin')->group(function () {
